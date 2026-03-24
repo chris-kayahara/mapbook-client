@@ -29,7 +29,12 @@ a {
 }
 
 label {
-    margin-bottom: .5rem
+    font-size: 13px;
+    margin-bottom: .5rem;
+
+    @include tablet{
+        font-size: 14px;
+    }
 }
 
 input {
@@ -96,7 +101,7 @@ textarea {
     border: 1px solid #d1d1d1;
     box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.125);
     font-family: inherit;
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.45;
     outline: none;
     -webkit-transition: .18s ease-out;
@@ -145,6 +150,6 @@ p{
     font-size: 13px;
 
     @include tablet {
-        font-size: 1rem;
+        font-size: 14px;
     }
 }

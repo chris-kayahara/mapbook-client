@@ -46,8 +46,8 @@ export default function LoginPage({ setIsUserLoggedIn }) {
         <div className="login">
             <div className="login__content">
               <div className="login__hero-container">
-                <h1 className="login__hero-header">Welcome to Photo Mapper!</h1>
-                <p className="login__hero-text">The app the lets you compile your photos and plot their location on an interactive map to share with your friends and family.</p>
+                <h1 className="login__hero-header">Welcome to MapBook!</h1>
+                <p className="login__hero-text">The app that lets you compile your photos and plot their location on an interactive map to share with your friends and family.</p>
                 <img className="login__hero-image" alt="hero" src={heroImage}/>
               </div>
               <form className="login__form" onSubmit={handleOnSubmit}>

@@ -49,7 +49,7 @@ export default function DocListCard(props) {
             <div className="doc-list-card__info">
                 <div className="doc-list-card__text-container">
                     <div className="doc-list-card__data-container">
-                        <p className="doc-list-card__date">Created: {date}</p>
+                        <p className="doc-list-card__date">{date}</p>
                         <p className="doc-list-card__count">Count: {props.document.length} images</p>
                     </div>
                     <p className="doc-list-card__description">{description}</p>
