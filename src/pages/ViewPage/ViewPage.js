@@ -76,6 +76,10 @@ export default function ViewPage() {
                         id="documentDescription"
                         value={document.description}
                         onChange={handleInputChange}></textarea>
+                    <div className="gallery__button-container">
+                        <button className="gallery__save-button">Save</button>
+                        <Link to='/'><button className="gallery__cancel-button">Cancel</button></Link>
+                    </div>
                 </div>
                 <div className="gallery__map-image-container">
                     <div className="gallery__map-container">
