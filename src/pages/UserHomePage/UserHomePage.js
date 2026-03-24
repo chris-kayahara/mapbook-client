@@ -18,6 +18,7 @@ export default function UserHomePage({ setIsUserLoggedIn }) {
     const [sortBy, setSortBy] = useState("updated_at");
     const [orderBy, setOrderBy] = useState("dec");
     const [sortBusy, setSortBusy] = useState(false);
+    const [count, setCount] = useState(0);
 
     const [documentId, setDocumentId] = useState("");
     const [documentName, setDocumentName] = useState("");
@@ -56,6 +57,7 @@ export default function UserHomePage({ setIsUserLoggedIn }) {
     }
 
     function fetchDocuments(){
+        console.log("test");
         axios.get(`${API_BASE_URL}/image/user/`, {
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -67,12 +69,12 @@ export default function UserHomePage({ setIsUserLoggedIn }) {
                 })
             .catch(error => {
                 console.log(error)
-            })
+            });
     }
 
     // Create useEffect to run at load
     useEffect(() => {
-        fetchDocuments();
+        setTimeout(fetchDocuments, 1000);
     }, []);
     useEffect(() => {
         fetchDocuments();
