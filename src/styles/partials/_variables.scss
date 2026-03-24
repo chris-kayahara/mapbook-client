@@ -8,12 +8,12 @@ $regular-font: 400;
 $semi-bold-font: 600;
 $bold-font: 700;
 
-$body-font: 'Avenir', sans-serif;
+$body-font: 'Verdana', Geneva, Tahoma, sans-serif;
 
 $black:#1c1c1c;
 $dark-grey: #3D3D3F;
 $medium-grey: #959595;
-$light-grey: #fcfcfc;
+$light-grey: #f4f4f4;
 $white: #FFFFFF;
 
 $extra-dark-color: #3D3D3F;
@@ -26,3 +26,7 @@ $extra-list-color: #ffbdb5;
 $green: #158463;
 $blue: #2E66E5;
 $red: #C94515;
+
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

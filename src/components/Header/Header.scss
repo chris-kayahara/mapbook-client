@@ -7,18 +7,33 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     &__content {
-        padding: 1.5rem 1rem 1.5rem 1rem;
+        padding: .5rem 1rem .5rem 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        max-width: 72rem;
         margin: 0 auto;
     
         @include tablet {
             align-items: start;
-            padding: 2rem 2rem 2rem 2rem;
+            padding: 1rem 2rem 1rem 2rem;
         }
+    }
+
+    &__logo-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__logo-icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo-icon {
+        width: 35px;
+        margin-right: 0.75rem;
     }
 
     &__logo {
@@ -27,7 +42,8 @@
         height: 2rem;
         font-weight: 700;
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
+        margin: auto 0;
 
         @include tablet {
             font-size: 2rem;
@@ -38,10 +54,11 @@
         color: $white;
         cursor: pointer;
         font-size: 14px;
+        line-height:14px;
         transition: all 0.2s ease;
+        margin: auto 0;
         &:hover{
             scale: 1.1;
-            font-weight: 600;
         }
 
         @include tablet {
